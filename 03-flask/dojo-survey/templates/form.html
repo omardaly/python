@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>FORM PAGE</title>
+</head>
+<body> 
+    
+    <div class="container mx-auto bg-dark p-3 col-3 ">
+         <h1 class="text-warning"> Dojo Survey</h1>
+       
+        <form  action="/process" method="POST">
+        <div>
+              <div>
+                <div>
+                     <label for="Your name" class="text-white" >Your name :</label>
+                </div>
+               
+                <input type="text" class="form-control" placeholder="name" aria-label="Username" aria-describedby="basic-addon1" name="full_name">
+
+            </div>
+            <br>
+                <div>
+                    <div>
+                         <label for="Dojo location" class="text-white">Dojo location :</label>
+                    </div>
+              
+                        <select class="form-select" aria-label="Default select example" name="location">
+                            <option value="u.s">u.s</option>
+                            <option value="tunisie">tunisie</option>
+                            <option value="maroc">maroc</option>
+                        </select>
+                </div>
+                <br>
+                <div>
+                    <div>
+                         <label for="Favorite language" class="text-white">Favorite language :</label>
+                    </div>
+                  
+                        <select class="form-select" aria-label="Default select example" name="language">
+                            <option value="Html">Html</option>
+                            <option value="Python">Python</option>
+                            <option value="CSS">CSS</option>
+                        </select>
+                </div>
+                <br>
+                <div>
+                    <label for="Comments" class="text-white">Comments :</label>
+                </div>
+                <div class="comment ">
+                    <textarea class="form-control" aria-label="With textarea" name="comment"></textarea>
+                </div>
+                <br>
+                <div class="col-12">
+                    <button class="btn btn-warning" type="submit">Submit</button>
+                  </div>
+
+
+        </div>
+
+
+        </form>
+        
+      
+        
+
+    </div>
+    
+</body>
+</html>
